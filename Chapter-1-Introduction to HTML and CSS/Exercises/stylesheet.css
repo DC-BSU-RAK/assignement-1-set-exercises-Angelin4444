@@ -1,0 +1,37 @@
+.image {
+    display: block;       /* Makes the image a block element */
+    margin: 0 auto;       /* Centers the image horizontally */
+    max-width: 50%;       /* Adjust the size (you can change the percentage) */
+    height: auto;         /* Keeps the aspect ratio of the image intact */
+}
+body {
+    font-family: 'Cinzel', serif; /* Vintage font */
+    background-color: #f4f1e1; /* Faded background color */
+    padding: 50px;
+    text-align: left; /* Keep text alignment normal */
+    
+    /* Border for the entire page */
+    border: 10px solid #8b5e3b; /* Thick brown border */
+    margin: 20px; /* Adds space around the border */
+    padding: 30px; /* Creates space inside the border */
+    border-radius: 20px; /* Rounds the edges slightly */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+}
+
+
+/* Center only the h1 heading */
+.vintage-text {
+    text-align: center; /* Centers only the heading */
+    color: #5b3d21; /* Dark brown color */
+    font-size: 48px; /* Large text */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Slight shadow for a printed effect */
+    letter-spacing: 2px; /* Space between letters for a vintage feel */
+    text-transform: uppercase; /* Makes text bold and classic */
+    line-height: 1.4;
+}
+
+/* Hover Effect */
+.vintage-text:hover {
+    color: #a06544; /* Slightly lighter color on hover */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); /* Stronger shadow effect */
+}
