@@ -1,0 +1,146 @@
+<!-- This is the bonus question that asks to make a 'HTML & CSS quick-reference guide'. Here I made a webpage that shows some of the tags ,styles learned or used commonly in HTML and CSS.Each of them is explained and made it into a neat box so that its clear and visible for the users. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS quick-reference guide </title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<!-- Here starts the quick guide of HTML and CSS. It starts with a neat heading and then a short introduction on what this webpage is about. Then its divided into two, first talking about the HTML and then CSS. For both (HTML & CSS)the tags and styles are shown inside a box and each are explained.-->
+
+<body>
+    <h1>Code Navigator: HTML & CSS Guide</h1>
+   
+    <p>This is a guide that covers the mostly used HTML tags, attributes, and CSS properties, grouped together into easy-to easy-to-read sections with practical examples for better understanding.</p>
+    
+    <h2>What is HTML ?</h2>
+
+    <P>HTML stands for Hyper Text Markup Language. HTML is the code that is used to structure a web page and its content.
+
+    <h3 class="value">Lets dive into some of the 'HTML tags'..</h3>
+
+    <p>This is the basic structure of a HTML document. A HTML consist of two parts. "Head" and a "Body". First it starts with Html tag opened. Then Head is opened where all the meta data(All the details in head will not be shown in the website)is mentioned. After closing head, Body is opened and all the details in the body part is shown in the website. Then the body tag is closed along with the html tag.</p>
+
+    <section>
+        <h2>Basic HTML Structure</h2>
+        <pre><code>&lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        Page content...
+      &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+
+      <p>These are some of the commonly used 'Tags' in a HTML document.</p>
+
+      <section>
+        <h2>Common Tags</h2>
+        <ul>
+          <li><code class="tag">&lt;h1&gt; to &lt;h6&gt;</code> – Used for 'Headings' (h1 for largest to h6 for smallest)</li>
+          <li><code class="tag">&lt;p&gt;</code> – 'Paragraph tag' used for writing sentences and paragrahs</li>
+          <li><code class="tag">&lt;b&gt;</code>, <code class="tag">&lt;strong&gt;</code> – It is used to get 'Bold text'</li>
+          <li><code class="tag">&lt;i&gt;</code>, <code class="tag">&lt;em&gt;</code> – This one is for 'Italic text'</li>
+          <li><code class="tag">&lt;a href="url"&gt;</code> – Create a 'link' to another page or website(basically used for getting clickable links)</li> 
+          <li><code class="tag">&lt;img src="image.jpg" alt="description"&gt;</code> – This helps in showing 'Images' in the website</li>
+          <li><code class="tag">&lt;br&gt;</code> – It is used for break 'Lines' in between</li>
+          <li><code class="tag">&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;</code> – Helps in creating Unordered List (Basically Bullet-points list).</li>
+        </ul>
+      </section>
+  
+      <p>These are some of the 'Tags' used for text formatting.</p>
+      <section>
+        <h2>Text Formatting</h2>
+        <ul>
+          <li><code class="tag">&lt;u&gt;</code> – 'u' is a tag used for underlining words or text </li>
+          <li><code class="tag">&lt;strike&gt;</code> – This tag 'Strikethrough' words or text</li>
+          <li><code class="tag">&lt;sup&gt;</code> – 'Superscript' helps to get smaller text placed 'above' normal text </li>
+          <li><code class="tag">&lt;sub&gt;</code> – 'Subscript' helps to get smaller text placed 'below' normal text </li>
+          <li><code class="tag">&lt;small/big&gt;</code> – Used to get small/big text</li>
+          <li><code class="tag">&lt;tt&gt;</code> – To get 'Typewriter' effect for the Text</li>
+        </ul>
+      </section>
+
+      <p>These are for 'Section Division'. </p>
+      <section>
+        <h2>Section Divisions</h2>
+        <ul>
+          <li><code class="tag">&lt;div/section&gt;</code> – 'Division' or 'Section' of the Page Content </li>
+          <li><code class="tag">&lt;hr&gt;</code> – This is used for getting basic 'horizontal line'/li>
+          <li><code class="tag">&lt;nobr&gt;</code> – Used for 'line breaking' </li>
+        </ul>
+      </section>
+
+      <p>Next section talks about 'Media'.</p>
+      <section>
+        <h2>Media</h2>
+        <ul>
+          <li><code class="tag">&lt;audio controls src=""audio&gt;</code> – This helps in showing 'Audios' in the website </li>
+          <li><code class="tag">&lt;video src=""video&gt;</code> – This helps in showing 'Videos' in the website /li>
+        </ul>
+      </section>
+      
+  <hr>
+  <h2>What is CSS ? </h2>
+
+  <p>CSS stands for Cascading Style Sheet. It is a language that is used to describe the style of a document.</p>
+
+
+  <h3 class="value">Lets dive into some of the 'CSS tags'..</h3>
+
+      <p>There are three ways to include CSS into HTML document </p>
+      <section>
+        <h2>Inline CSS</h2>
+        <ul>
+          <li><code class="tag">&lt;h1 style=""&gt;&lt;/h1&gt;</code> – Here the styling is done within the lines of html tags </li>
+        </ul>
+      </section>
+    
+      <section>
+        <h2>Internal CSS</h2>
+        <ul>
+          <li>
+            <code class="tag">
+              &lt;style&gt; h1 { color: blue; } &lt;/style&gt;
+            </code>
+            – Here the styling is written inside a style tag and it is placed within the head of the HTML document.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>External CSS</h2>
+        <ul>
+          <li>
+            <code class="tag">
+              &lt;link rel="stylesheet" href="styles.css"&gt;
+            </code>
+            – This opens up a external CSS file to the HTML document. The CSS rules are written in a separate file (like <code>styles.css</code>).
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>CSS Properties</h2>
+        <ul>
+          <li><code>color</code> – Used it for 'color'</li>
+          <li><code>background-color</code> – Used for 'Background color'</li>
+          <li><code>font-size</code> – 'Size' of text is selected</li>
+          <li><code>margin</code> – Make sure of Space outside element(no text go outside the page )</li>
+          <li><code>padding</code> – Makes sure of Space inside element(no text overlap each other or touches the margin)</li>
+          <li><code>border</code> – Helps in creating 'border'</li>
+          <li><code>text-align</code> – Makes sure that the 'alignment' of text is proper</li>
+          <li><code>display</code> – Ensures the 'Layout' of the page</li>
+        </ul>
+      </section>
+
+      <h1>Thank you for Visiting the page</h1>
+      <!-- Here we ends the webpage with a Thankyou note. -->
+</body>
+</html>
+
+

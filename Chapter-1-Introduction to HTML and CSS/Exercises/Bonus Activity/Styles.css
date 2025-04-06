@@ -1,0 +1,75 @@
+ /* These are the styles used for making the webpage look more neat and beautiful */
+
+ /* 'Body' is for styling the overall webpage */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* These are some of the text fonts used. Five of the fonts are given ,to make sure its visible and well writern in ever web browser. */
+    background-color: #2e2e3a; /* This helps in giving the webpage a bluish-gray background. */
+    color: #dcd6f7; /* Sets the main text color into a light purple. */
+    line-height: 1.6; /* Helps in adding space between lines of text. */
+    padding: 2rem; /* Adds space inside the text so it wont overlap each other. */
+    max-width: 1000px; /* Makes the layout more readable and centered in every screen */
+    margin: auto; /* Helps to center the content in the middle of the screen. */
+  }
+  
+  /* This is specifically for the Titles (h1 and h2). It will be in a soft peachy colored text.*/
+
+  h1, h2 {
+    color: #fbc4ab;
+  }
+  
+  /* Section basically styles the boxes (<section> tags) on the webpage, to make them look nice. For creating neat box like background. */
+
+  section {
+    background: #3a3a4a;  /* Gives bluish-purple tint background to the box */
+    border: 1px solid #5e5c64;/* This is for the border around the box with a light Gray Purple shade */
+    border-radius: 12px;  /* This helps in getting the border curvy */
+    margin-bottom: 2rem;  /* Helps in adding space below each section */
+    padding: 1.5rem;  /* Helps to get space between the edge and the content.So that they wont overlap each other */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);  /* Box-shadow gives the box a shadow effect and makes it look like 3D  */
+  }
+  
+  /* 'code, pre' is used for styling code example shown on the webpage */
+
+code, pre {
+  background: #524d63; /* Sets a dark purple-gray background to highlight the code area */
+  padding: 0.3rem 0.5rem; /* Adds inner space for room */
+  border-radius: 6px; /* Slightly rounds the corners of the code box */
+  font-size: 0.95em; /* Makes the text slightly smaller than normal*/
+  color: #ffeecc; /* Sets the code text color to a soft butter yellow so that it will stand out */
+}
+
+/* 'pre' is used for styling multi-line code blocks */
+
+pre {
+  display: block; /* Makes the code block take full width on the screen */
+  overflow-x: auto; /* Adds a scroll bar if the code is too long to fit horizontally */
+  padding: 1rem; /* Adds space inside the code block to make it more readable */
+}
+
+/* 'ul' is used for styling unordered lists (bullet points) */
+
+ul {
+  padding-left: 1.2rem; /* Adds space from the left side so bullets don't touch the edge */
+}
+
+/* 'li' is used to style each list item inside the list */
+
+li {
+  margin-bottom: 0.5rem; /* Adds space below each bullet point to separate them */
+}
+
+/* '.tag' is used to highlight HTML tags inside the code */
+
+.tag {
+  color: #cdb4db; /* Sets the tag color to a soft purple to make it stand out */
+  font-weight: bold; /* Makes the tag text bold for better visibility */
+}
+
+/* '.value' is used to style the values of attributes inside the code */
+
+.value {
+  color: #ffb4a2; /* Sets the value color to a light peach tone to highlight it */
+}
+
+  
