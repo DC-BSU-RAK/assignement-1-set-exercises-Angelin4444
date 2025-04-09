@@ -72,4 +72,13 @@ li {
   color: #ffb4a2; /* Sets the value color to a light peach tone to highlight it */
 }
 
-  
+/* Footer styling to center the text and match the page theme */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer h2 {
+  color: #fbc4ab; /* same peachy color as headings */
+  font-size: 1.5rem;
+}
