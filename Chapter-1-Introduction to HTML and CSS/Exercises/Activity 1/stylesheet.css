@@ -1,6 +1,8 @@
 /* This is the External stylesteet were all the styling of the websites are styled. */
 
-/* First class is for image. So here we are styling the image to be in the center, makes the image block element(so it wont be inside any text), then we are looking at the size of the image were it will be only 50% and the hieght remains normal. */
+/* First class is for image. So here we are styling the image to be in the center, 
+makes the image block element(so it wont be inside any text), 
+then we are looking at the size of the image were it will be only 50% and the hieght remains normal. */
 
 .image {
     display: block;       
