@@ -1,0 +1,147 @@
+
+body {
+  background-color: #fefaf4; /* Light pastel cream color for a clean background */
+  color: #3b3b3b; /* Soft dark grey color for readable text */
+  font-family: 'Segoe UI', sans-serif; /* Smooth and professional font */
+  line-height: 1.6; /* Adds vertical space between lines of text for readability */
+  padding: 20px; /* Adds space inside the edges of the page */
+}
+  
+h1 {
+  font-size: 2.5em; /* Makes the heading big and bold */
+  margin-bottom: 10px; /* Adds space below the heading before the next element */
+  color: #be4b5d; /* A pretty berry red color that matches the soft theme */
+  text-align: left; /* Aligns the heading text to the left */
+}
+  
+  .navbar {
+    background-color: #eaffea; /* Light greenish background */
+    padding: 10px 15px; /* Space inside the navbar */
+    margin-bottom: 30px; /* Space below navbar */
+    border-radius: 12px; /* Rounded corners */
+    display: flex; /* Makes it a flexbox container */
+    gap: 20px; /* Space between items inside the navbar */
+    flex-wrap: wrap; /* Items go to the next line if needed */
+    max-width: 700px; /* Restricts how wide the navbar can be */
+    margin-left: auto;
+    margin-right: auto; /* Centers the navbar horizontally */
+  }
+  
+  .navbar a {
+    text-decoration: none; /* Removes underline from links */
+    color: #3d9970; /* Dark greenish text */
+    font-weight: bold; /* Makes the link text bold */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+  }
+
+  .navbar a:hover {
+    color: #ff4d6d; /* Pinkish-red when you hover */
+    text-decoration: underline; /* Adds underline on hover */
+  }
+
+  .watch-link {
+    display: inline-block; /* Allows padding and margin */
+    margin-top: 1rem; /* Space above the button */
+    background-color: #fbc4ab; /* Peach background */
+    color: #2e2e3a; /* Dark text color */
+    padding: 0.6rem 1.2rem; /* Top-bottom and left-right padding */
+    border-radius: 8px; /* Slightly rounded corners */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth background change */
+  }
+
+  .watch-link:hover {
+    background-color: #ffe5d9; /* Lighter peach on hover */
+    color: #000; /* Text becomes black on hover */
+  }
+
+  section {
+    margin-bottom: 40px; /* Space below each section */
+  }
+
+  h2 {
+    color: #c0392b; /* Dark red text */
+    border-bottom: 2px solid #ffd6d6; /* Light pink underline */
+    padding-bottom: 5px; /* Space below the text before the border */
+  }
+
+  ul {
+    list-style-type: circle; /* Circle bullets */
+    padding-left: 20px; /* Space between bullets and text */
+  }
+
+  .button {
+    display: inline-block; /* So padding and margin work */
+    background: linear-gradient(135deg, #ff6b81, #81c784); /* Gradient background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Space inside button */
+    border-radius: 25px; /* Pill-shaped button */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text */
+    transition: background 0.3s ease; /* Smooth gradient transition on hover */
+  }
+
+  .button:hover {
+    background: linear-gradient(135deg, #e74c3c, #66bb6a); /* Different gradient on hover */
+  }
+
+  .infobox {
+    background-color: #fff0f5; /* Light pinkish background */
+    border-left: 6px solid #ff6b81; /* Colored vertical line at the left */
+    padding: 15px 20px; /* Inside spacing */
+    margin-bottom: 40px; /* Space below */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto; /* Center it */
+  }
+
+  .infobox h2 {
+    margin-top: 0; /* No space above the heading */
+    color: #c0392b; /* Dark red */
+  }
+
+  .infobox ul {
+    list-style-type: none; /* No bullet points */
+    padding-left: 0; /* No indent */
+  }
+  
+  .infobox li {
+    margin-bottom: 8px; /* Space between list items */
+  }
+
+  .review {
+    background-color: #fff7f9; /* Very light pink background */
+    padding: 15px 20px; /* Inner spacing */
+    margin-bottom: 20px; /* Space below each review */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Soft shadow */
+    position: relative;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto; /* Center the box */
+  }
+
+  .review::before {
+    content: attr(data-name) " "; /* Display the name stored in HTML attribute */
+    font-weight: bold;
+    color: #be4b5d; /* Dark pink name */
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+  .review::after {
+    content: attr(data-time); /* Display the time from attribute */
+    display: block;
+    color: #999; /* Light gray time */
+    font-size: 0.9em;
+    margin-top: 6px;
+  }
+
+  footer {
+    text-align: center; /* Center text inside footer */
+    margin-top: 2rem; /* Space above the footer */
+  }
+  
