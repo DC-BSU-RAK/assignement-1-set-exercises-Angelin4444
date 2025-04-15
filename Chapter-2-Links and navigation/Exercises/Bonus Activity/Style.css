@@ -1,0 +1,646 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f9f6f1;
+    color: #222;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .site-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .right-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .right-header input[type="text"] {
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+
+  nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 0;
+    font-weight: bold;
+    border-bottom: 2px solid #e5e5e5;
+  }
+
+  nav span {
+    cursor: default;
+    transition: color 0.3s;
+  }
+
+  nav span:hover {
+    color: #c49a6c;
+  }
+
+/* Global */
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #fdf6ee; /* Cream background */
+    color: #222;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fdf6ee; /* Cream background */
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .site-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #a17452; /* Light brown */
+  }
+  
+  .right-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .right-header input[type="text"],
+  .right-header button {
+    padding: 8px 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: #c5a675; /* Golden light brown */
+    color: white;
+    font-weight: 600;
+    font-family: 'Georgia', serif;
+    cursor: pointer;
+  }
+  
+  .right-header input[type="text"]::placeholder {
+    color: white;
+  }
+  
+  /* Nav */
+  nav {
+    background-color: #fdf6ee;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 0;
+    font-weight: bold;
+    border-bottom: 2px solid #e5e5e5;
+    color: #a17452;
+  }
+  
+  nav span:hover {
+    color: #c49a6c;
+  }
+
+  .explore-boxes a {
+    padding: 10px 20px;
+    background-color: #ffe5ec;
+    border-radius: 15px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+  }
+  
+  .explore-boxes a:hover {
+    background-color: #ffd3e0;
+    transform: scale(1.05);
+  }
+
+    /* Feature Box Layout */
+    .feature-box {
+        background-color: #fffaf8;
+        padding: 40px;
+        width: 80%;
+        max-width: 1000px;
+        margin: 50px auto;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .feature-image {
+        font-size: 6rem;
+        font-weight: bold;
+        color: #d94f70;
+        text-shadow: 0 0 15px #ffafc3, 0 0 30px #ffcbd9;
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+      }
+    
+      .feature-details {
+        flex: 1;
+        text-align: left;
+      }
+    
+      .feature-details .tag {
+        background-color: #ffd3e0;
+        padding: 8px 20px;
+        font-weight: bold;
+        font-size: 1rem;
+        border-radius: 25px;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+    
+      .feature-details .title {
+        font-size: 2.5rem;
+        margin: 10px 0;
+        font-weight: bold;
+        color: #d94f70;
+      }
+    
+      .feature-details .rating {
+        font-size: 1.5rem;
+        color: #e26a6a;
+        margin: 10px 0;
+      }
+    
+      .feature-details .rating small {
+        font-size: 1rem;
+        color: #888;
+      }
+    
+      .feature-details .description {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+        color: #444;
+      }
+  
+  /* Review Section Title */
+  .review-heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Georgia', serif;
+    margin-bottom: 40px;
+    color: #a17452;
+  }
+  
+  /* Review Row */
+  .review-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10%;
+    flex-wrap: wrap;
+  }
+  
+  /* Movie card styles */
+  .movie-card {
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .card1 { background-color: #ff6f61; }     /* Red */
+  .card2 { background-color: #444444; }     /* Dark gray (light black tone) */
+  .card3 { background-color: #b2dffb; }     /* Light hospital blue */
+  
+  .movie-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .movie-card p {
+    margin: 5px 0;
+    font-size: 15px;
+  }
+  
+  /* View All */
+  .view-all {
+    background-color: #c5a675;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    width: fit-content;
+    margin: 40px auto;
+    font-family: 'Georgia', serif;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    cursor: default;
+  }
+  
+  .view-all:hover {
+    background-color: #b4925e;
+  }
+  
+  /* Divider line */
+  .divider-line {
+    height: 3px;
+    width: 60px;
+    background-color: #c5a675;
+    margin: 40px auto;
+    border-radius: 2px;
+  }
+  
+  /* Closing Tagline */
+  .closing-tagline {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: #9e5e66;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Footer */
+  .main-footer {
+    background-color: #fff0f3;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-top: 2px solid #ffd3e0;
+    color: #7d4e50;
+  }
+  
+  .main-footer p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    margin: 0 10px;
+    text-decoration: underline;
+    color: #a1735c;
+    font-size: 0.95rem;
+  }
+  
+  .footer-links a:hover {
+    color: #c26f82;
+  }
+  
+
+  .explore-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .explore-boxes span {
+    padding: 10px 20px;
+    background-color: #ffe5ec;
+    border-radius: 15px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: default;
+    transition: 0.3s;
+  }
+
+  .explore-boxes span:hover {
+    background-color: #ffd3e0;
+    transform: scale(1.05);
+  }
+
+  /* Divider line */
+.divider-line {
+    height: 3px;
+    width: 60px;
+    background-color: #c5a675;
+    margin: 40px auto;
+    border-radius: 2px;
+  }
+  
+  /* Heading */
+  .review-heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Georgia', serif;
+    margin-bottom: 40px;
+  }
+  
+  /* Layout row */
+  .review-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10%;
+    flex-wrap: wrap;
+  }
+  
+  /* Movie card styles */
+  .movie-card {
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Hover effect */
+  .movie-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  }
+  
+  /* Each card color */
+  .card1 { background-color: #ff6f61; }  /* Coral */
+  .card2 { background-color: #6a89cc; }  /* Blue-purple */
+  .card3 { background-color: #88b04b; }  /* Green */
+  
+  .movie-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .movie-card p {
+    margin: 5px 0;
+    font-size: 15px;
+  }
+  
+  /* View All Button */
+  .view-all {
+    background-color: #c5a675;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    width: fit-content;
+    margin: 40px auto;
+    font-family: 'Georgia', serif;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    cursor: default;
+  }
+  
+  .view-all:hover {
+    background-color: #b4925e;
+  }
+
+  /* Closing Line */
+.closing-tagline {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: #9e5e66;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Footer Styles */
+  .main-footer {
+    background-color: #fff0f3;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-top: 2px solid #ffd3e0;
+    color: #7d4e50;
+  }
+  
+  .main-footer p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    margin: 0 10px;
+    text-decoration: underline;
+    color: #a1735c;
+    font-size: 0.95rem;
+  }
+  
+  .footer-links a:hover {
+    color: #c26f82;
+  }
+
+  .review {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px 50px;
+    margin: 25px auto;
+    max-width: 800px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    line-height: 1.6;
+    box-sizing: border-box;
+  }
+  
+  /* Reviewer name */
+  .review::before {
+    content: attr(data-name);
+    display: block;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+  }
+  
+  /* Review time */
+  .review::after {
+    content: attr(data-time);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0.85rem;
+    color: #888;
+  }
+  
+  /* Star styling */
+  .review::before {
+    content: attr(data-name);
+    display: block;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.05rem;
+    margin-bottom: 5px;
+  }
+  
+  /* Like/Dislike buttons */
+  .review-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: flex-end;
+  }
+  
+  .review-buttons button {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .review-buttons button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Star rating icons */
+  .stars {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #f4c542;
+  }
+  
+  /* Responsive tweaks */
+  @media screen and (max-width: 600px) {
+    .review {
+      padding: 15px;
+    }
+  
+    .review::after {
+      top: 15px;
+      right: 15px;
+      font-size: 0.75rem;
+    }
+  
+    .review-buttons {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .review-buttons button {
+      width: 100px;
+    }
+  }
+
+  h2 {
+    color: #8B4513; /* rich brown */
+    font-weight: bold;
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  /* 📦 Overview paragraph box */ 
+.overview-box {
+  background-color: #fff4ec;
+  border-left: 5px solid #ffb6b9;
+  padding: 25px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* 🎬 Episode boxes grid */
+.episode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* 📺 Episode boxes */
+.episode-box {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  background-color: #ffe0e0;
+  color: #6d4c41;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.episode-box:hover {
+  background-color: #ffbdbd;
+  transform: scale(1.05);
+}
+
+.button {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff6b81, #81c784);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; 
+    transition: background 0.3s ease;
+    min-width: 220px;
+    text-align: center;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #e74c3c, #66bb6a);
+}
+
+.drama-info-box {
+    background: #fff8f0; 
+    border: 2px solid #f5b7b1; 
+    border-radius: 15px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.drama-info-box ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.drama-info-box li {
+    margin-bottom: 10px;
+}
+  
