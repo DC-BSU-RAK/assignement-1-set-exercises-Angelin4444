@@ -471,7 +471,7 @@ body {
     box-sizing: border-box;
   }
   
-  /* Reviewer name */
+ 
   .review::before {
     content: attr(data-name);
     display: block;
@@ -481,7 +481,7 @@ body {
     margin-bottom: 8px;
   }
   
-  /* Review time */
+
   .review::after {
     content: attr(data-time);
     position: absolute;
@@ -491,7 +491,7 @@ body {
     color: #888;
   }
   
-  /* Star styling */
+ 
   .review::before {
     content: attr(data-name);
     display: block;
@@ -501,7 +501,7 @@ body {
     margin-bottom: 5px;
   }
   
-  /* Like/Dislike buttons */
+ 
   .review-buttons {
     display: flex;
     gap: 10px;
@@ -522,15 +522,14 @@ body {
   .review-buttons button:hover {
     background-color: #e0e0e0;
   }
-  
-  /* Star rating icons */
+
   .stars {
     margin-bottom: 10px;
     font-size: 1.1rem;
     color: #f4c542;
   }
   
-  /* Responsive tweaks */
+
   @media screen and (max-width: 600px) {
     .review {
       padding: 15px;
@@ -553,13 +552,13 @@ body {
   }
 
   h2 {
-    color: #8B4513; /* rich brown */
+    color: #8B4513; 
     font-weight: bold;
     text-align: left;
     margin-top: 30px;
   }
 
-  /* 📦 Overview paragraph box */ 
+
 .overview-box {
   background-color: #fff4ec;
   border-left: 5px solid #ffb6b9;
@@ -574,7 +573,7 @@ body {
   border-radius: 10px;
 }
 
-/* 🎬 Episode boxes grid */
+
 .episode-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -584,7 +583,7 @@ body {
   padding: 0 20px;
 }
 
-/* 📺 Episode boxes */
+
 .episode-box {
   display: block;
   text-align: center;
