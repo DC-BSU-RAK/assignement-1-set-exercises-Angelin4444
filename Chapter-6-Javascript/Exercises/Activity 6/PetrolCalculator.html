@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Petrol Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="toggleTheme">🌗</button>
+  </div>
+
+  <div class="container">
+    <h1>⛽ Petrol Cost Calculator</h1>
+
+    <label for="costPerLitre">Cost per Litre (Dhs):</label>
+    <input type="number" id="costPerLitre" value="1.72" />
+
+    <label for="litres">Number of Litres:</label>
+    <input type="number" id="litres" value="0" />
+
+    <button onclick="calculateCost()">Calculate</button>
+
+    <p id="result">Total Cost: Dhs 0.00</p>
+  </div>
+
+  <script src="Petrol.js"></script>
+</body>
+</html>
