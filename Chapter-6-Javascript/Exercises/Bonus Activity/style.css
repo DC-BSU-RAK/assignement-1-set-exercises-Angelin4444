@@ -2,48 +2,50 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: #ddeced; /* Light pastel background for soft look */
-    color: #333; /* Standard dark text */
+    background: #ddeced; /* Light pastel background for soft and calming vibe */
+    color: #333; /* Standard dark grey text for readability */
   }
   
   /* ===== Header Section ===== */
   header.main-header {
     display: flex;
-    justify-content: space-between; /* Logo left, login right */
+    justify-content: space-between; /* Align logo to left and auth links to right */
     padding: 20px;
-    background: #a44dcf; /* Purple header */
-    color: white;
+    background: #a44dcf; /* Main purple theme for header background */
+    color: white; /* White text inside header */
   }
   
   .logo {
     margin: 0;
-    font-size: 1.8rem; /* Bold logo text */
+    font-size: 1.8rem; /* Large logo font size for branding */
   }
   
   .auth-links {
-    font-size: 0.9rem; /* Smaller text for Sign Up | Log In */
+    font-size: 0.9rem; /* Slightly smaller size for Sign Up | Log In */
   }
   
   .auth-btn {
     cursor: default;
-    color: #ffd700; /* Gold color */
-    transition: color 0.3s ease; /* Smooth hover effect */
+    color: #ffd700; /* Golden color for auth links */
+    transition: color 0.3s ease; /* Smooth color change when hovering */
   }
   
   .auth-btn:hover {
     color: white; /* Turns white on hover */
+    text-shadow: 0 0 5px #fff, 0 0 10px #ffd700, 0 0 15px #ffd700; /* Glowing text effect */
   }
   
   /* ===== Title Section ===== */
   .title-section {
     text-align: center;
-    padding: 40px 20px 20px;
+    padding: 40px 20px 20px; /* Space around title content */
   }
   
   .main-title {
     font-size: 2rem;
-    color: #a44dcf; /* Matches the header purple */
+    color: #a44dcf; /* Purple matching the header */
     margin-bottom: 15px;
+    animation: fadeIn 1s ease; /* Fade-in animation for smooth entrance */
   }
   
   .description,
@@ -51,26 +53,28 @@ body {
     max-width: 600px;
     margin: auto;
     font-size: 1rem;
+    animation: fadeIn 1.5s ease; /* Slight delay for smooth content reveal */
   }
   
   /* ===== Game Area Box ===== */
   .game-box {
-    background: #ba64e5; /* Soft purple background */
+    background: #ba64e5; /* Light purple background for game area */
     max-width: 600px;
     margin: 30px auto;
     padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1); /* Soft shadow */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1); /* Soft drop shadow */
     text-align: center;
+    animation: fadeIn 2s ease; /* Smooth fade-in for entire game box */
   }
   
   #rgbDisplay {
     font-weight: bold;
-    color: #d63031; /* Red for RGB code */
+    color: #d63031; /* Bold red color to highlight RGB code */
   }
   
   #lives {
-    font-size: 1.2rem; /* Lives emoji size */
+    font-size: 1.2rem; /* Enlarges the heart icons */
   }
   
   /* ===== Color Button Options ===== */
@@ -79,7 +83,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px; /* Space between buttons */
+    gap: 15px; /* Space between each color button */
   }
   
   .color-btn {
@@ -87,12 +91,13 @@ body {
     height: 100px;
     border: none;
     cursor: pointer;
-    border-radius: 10px;
-    transition: transform 0.2s; /* Hover zoom effect */
+    border-radius: 10px; /* Smooth round buttons */
+    transition: transform 0.2s; /* Makes hover effect smooth */
   }
   
   .color-btn:hover {
     transform: scale(1.05); /* Slight zoom on hover */
+    animation: pulse 0.3s ease; /* Bouncy pulse effect when hovering */
   }
   
   /* ===== Result Modal ===== */
@@ -102,27 +107,29 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.6); /* Dark overlay */
-    display: none; /* Hidden by default */
+    background: rgba(0,0,0,0.6); /* Dark transparent overlay */
+    display: none; /* Hidden by default, shown when game ends */
     justify-content: center;
     align-items: center;
   }
   
   .result-modal .modal-content {
-    background: rgb(186, 123, 189); /* Pastel purple popup */
+    background: rgb(186, 123, 189); /* Light purple popup background */
     padding: 30px;
     border-radius: 15px;
     text-align: center;
+    animation: zoomIn 0.5s ease; /* Zoom in animation for modal entrance */
   }
   
   .result-modal button {
     margin-top: 20px;
     padding: 10px 20px;
-    background: #6c5ce7; /* Purple button */
+    background: #6c5ce7; /* Primary purple for button */
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    transition: background 0.3s ease; /* Smooth background change on hover */
   }
   
   .result-modal button:hover {
@@ -134,21 +141,56 @@ body {
     text-align: center;
     font-style: italic;
     margin: 50px 20px 30px;
-    color: #555; /* Greyish for soft quote feel */
+    color: #555; /* Soft grey tone for an inspirational feel */
+    animation: fadeIn 2s ease; /* Fade in with a gentle delay */
   }
   
   /* ===== Footer ===== */
   hr {
     border: none;
-    border-top: 4px solid #a44dcf; /* Thick divider line in header purple */
+    border-top: 4px solid #a44dcf; /* Thick purple line divider */
     margin: 40px auto 10px;
-    width: 80%;
+    width: 80%; /* Slight padding from edges */
   }
   
   footer {
     text-align: center;
     padding: 10px;
-    background: #dfe6e9; /* Light background footer */
-    font-size: 0.9rem;
+    background: #dfe6e9; /* Light pastel footer background */
+    font-size: 0.9rem; /* Small readable font */
+  }
+  
+  /* ===== Animations ===== */
+  
+  /* Fade In (used for most sections like title and game box) */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Pulse effect for color buttons */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Shake animation for losing a heart */
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .heart-lose {
+    animation: shake 0.3s ease; /* Triggered when a wrong answer is picked */
+  }
+  
+  /* Zoom In animation for modal popup */
+  @keyframes zoomIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
   }
   

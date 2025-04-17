@@ -8,29 +8,42 @@
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- ===== Header Section Starts ===== -->
   <header class="main-header">
+    <!-- Website Logo -->
     <h1 class="logo">Hue Hunter</h1>
+
+    <!-- Auth buttons for sign up and login -->
     <div class="auth-links">
       <span class="auth-btn">Sign Up</span> | <span class="auth-btn">Log In</span>
     </div>
   </header>
+  <!-- Header Section Ends -->
 
-  <!-- Title -->
+  <!-- Title Section Starts -->
   <section class="title-section">
+    <!-- Game main title with fun wordplay -->
     <h2 class="main-title">Hue Do You Think You Are?</h2>
+
+    <!-- Game explanation and RGB intro -->
     <p class="description">
       Every colour on the screen can be represented using an RGB code (Red, Green, Blue) code. This code consists of three numbers between 0 and 255, indicating how much red, green and blue are used to recreate the colour. For instance the RGB code for:
     </p>
+
+    <!-- Game instructions -->
     <p class="instructions">
       Your job here is to find the correct RGB colour. You have <strong>5 lives</strong> to win this game. Let’s get started!
     </p>
   </section>
+  <!-- Title Section Ends -->
 
-  <!-- Game Area -->
+  <!--  Game Area Section Starts -->
   <section class="game-box">
     <div class="game-info">
+      <!-- Shows the RGB code the user has to match -->
       <h3>Guess this colour: <span id="rgbDisplay">rgb(???, ???, ???)</span></h3>
+
+      <!-- Displays remaining lives using heart emojis -->
       <p>Lives:
         <span id="lives">
           ❤️❤️❤️❤️❤️
@@ -38,31 +51,38 @@
       </p>
     </div>
 
+    <!-- Container where the color options will be generated using JS -->
     <div class="color-options" id="colorOptions">
       <!-- Color buttons will be generated here -->
     </div>
   </section>
+  <!-- Game Area Section Ends-->
 
-  <!-- Result Modal -->
+  <!--Result Modal (Game Over popup) Starts-->
   <div class="result-modal" id="resultModal">
     <div class="modal-content">
+      <!-- Displays final score and gives option to restart -->
       <h2>Game Over</h2>
       <p>Your Score: <span id="finalScore">0</span></p>
       <button onclick="startGame()">Play Again</button>
     </div>
   </div>
+  <!--Result Modal Ends-->
 
-  <!-- Quote Section -->
+  <!--Motivational Quote Section Starts-->
   <section class="quote">
     <p>"RGB? More like Really Good at Being awesome."</p>
   </section>
+  <!-- Quote Section Ends -->
 
-  <!-- Footer -->
+  <!--Footer Section Starts-->
   <hr />
   <footer>
     <p>© Hue Hunter 2025</p>
   </footer>
+  <!-- Footer Section Ends -->
 
+  <!-- Linking external JavaScript file that controls game logic -->
   <script src="RGB.js"></script>
 </body>
 </html>
