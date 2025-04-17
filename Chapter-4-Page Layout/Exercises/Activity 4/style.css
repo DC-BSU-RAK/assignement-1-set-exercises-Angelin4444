@@ -1,0 +1,141 @@
+/* Resetting default margin, padding and setting box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling: sets font, background and makes layout fill full height of the viewport */
+  body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color: #f5f5f5;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column; /* Stack header, main, and footer vertically */
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #1f073c;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  /* Navigation menu styles */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #8c15e9; /* Hover color */
+  }
+  
+  /* Main layout holding welcome and lineup sections */
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 15px 10px 15px 30px; /* top right bottom left */
+    flex: 1;
+    gap: 20px;
+  }
+  
+  /* Left section - Welcome */
+  .welcome {
+    flex: 2; /* Takes 2/3 of the main width */
+    padding-right: 20px;
+  }
+  
+  .welcome h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .welcome p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  /* Welcome image adjusted to fill the section better */
+  .welcome img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover; /* Maintain aspect ratio and fill the space */
+    border-radius: 0; /* No border curve */
+  }
+  
+  /* Right section - Line Up */
+  .lineup {
+    background-color: #172d67;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between list and images */
+  }
+  
+  .lineup h2 {
+    text-decoration: underline;
+    margin-bottom: 15px;
+  }
+  
+  /* Line up list */
+  .lineup ul {
+    list-style-type: none;
+    line-height: 1.8;
+    margin-bottom: 10px; /* Reduced margin to bring content up */
+  }
+  
+  /* Container for line up images */
+  .lineup .images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  /* Line up images made larger */
+  .lineup img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0;
+    transition: transform 0.3s ease; /* Hover effect transition */
+  }
+  
+  .lineup img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  /* Footer at the bottom */
+  footer {
+    background-color: #8c15e9;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    font-size: 0.9em;
+    margin: 0; /* Removed bottom margin to avoid extra space */
+  }
+  
