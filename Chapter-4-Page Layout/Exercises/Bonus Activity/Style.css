@@ -1,0 +1,110 @@
+/* This is the body section. It sets up the main background, font, and text color for the whole page */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffb6c1, #add8e6, #dda0dd); /* pink, blue, purple gradient */
+    background-size: 400% 400%; /* makes the gradient move smoothly */
+    animation: gradientFlow 15s ease infinite; /* makes the gradient animated */
+    color: #333; /* dark grey text */
+  }
+  
+  /* This is the header section. It is the top part of the page where the main heading is shown */
+  header {
+    background-color: #97addd; /* light periwinkle blue */
+    padding: 1rem; /* adds space inside the header */
+    text-align: center; /* centers the heading text */
+    color: white; /* heading text color */
+    font-weight: bold; /* makes the heading bold */
+  }
+  
+  /* This is the navigation bar. It is used to link to other pages or sections */
+  nav {
+    background-color: #eac1dc; /* soft rosy pink background */
+  }
+  
+  /* This styles the unordered list inside the nav */
+  nav ul {
+    list-style: none; /* removes bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* makes links appear side-by-side */
+    justify-content: center; /* centers the navigation items */
+  }
+  
+  /* This targets each list item in the nav bar */
+  nav ul li {
+    margin: 0 1rem; /* adds spacing between each link */
+  }
+  
+  /* This styles the links inside the nav bar */
+  nav ul li a {
+    text-decoration: none; /* removes underline from links */
+    color: rgb(148, 77, 184); /* purple text for nav links */
+    padding: 1rem; /* adds padding inside the links */
+    display: block;
+  }
+  
+  /* This styles the hover effect for nav links */
+  nav ul li a:hover {
+    background-color: #d49fc9; /* deeper pink background on hover */
+  }
+  
+  /* This is the main section layout. It holds all the columns side by side */
+  main {
+    display: flex;
+    justify-content: space-around; /* puts space between the columns */
+    padding: 2rem; /* space around the content */
+    gap: 2rem; /* space between columns */
+    flex-wrap: wrap; /* makes it responsive by wrapping on small screens */
+  }
+  
+  /* This styles each individual column block */
+  .column {
+    background-color: white;
+    border-radius: 12px; /* rounded corners */
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* adds soft shadow */
+  }
+  
+  /* This styles the heading inside each column */
+  .column h2 {
+    color: #006699; /* blue color for column titles */
+  }
+  
+  /* This styles the buttons used in the layout */
+  button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #20b2aa; /* teal color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* This is the hover effect for buttons */
+  button:hover {
+    background-color: #2e8b57; /* darker green on hover */
+  }
+  
+  /* This is the footer section. It appears at the bottom of the page and shows extra info */
+  footer {
+    background-color: #c3b4df; /* soft lavender purple */
+    text-align: center;
+    padding: 1rem;
+    color: #333;
+    margin-top: 2rem;
+    font-weight: bold; /* makes the text bold */
+  }
+  
+  /* This is the animation for the background gradient */
+  @keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
