@@ -1,567 +1,569 @@
 body {
-    margin: 0;
-    font-family: 'Georgia', serif;
-    background-color: #f9f6f1;
-    color: #222;
-  }
+  margin: 0; /* Remove default margin around the body */
+  font-family: 'Georgia', serif; /* Set the font to Georgia with serif style */
+  background-color: #f9f6f1; /* Set a light background color */
+  color: #222; /* Set the text color to a dark shade */
+}
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: white;
-    border-bottom: 1px solid #ccc;
-  }
+header {
+  display: flex; /* Use flexbox layout for the header */
+  justify-content: space-between; /* Space items evenly between the edges */
+  align-items: center; /* Center items vertically within the header */
+  padding: 20px 40px; /* Add space inside the header (20px top/bottom, 40px left/right) */
+  background-color: white; /* Set the background color to white */
+  border-bottom: 1px solid #ccc; /* Add a light gray border at the bottom */
+}
 
-  .site-title {
-    font-size: 2rem;
-    font-weight: bold;
-  }
+.site-title {
+  font-size: 2rem; /* Set the font size for the site title to 2rem (large) */
+  font-weight: bold; /* Make the site title bold */
+}
 
-  .right-header {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
+.right-header {
+  display: flex; /* Use flexbox layout for the right header section */
+  align-items: center; /* Center items vertically within the right header */
+  gap: 20px; /* Add space between items in the right header */
+}
 
-  .right-header input[type="text"] {
-    padding: 5px 10px;
-    font-size: 1rem;
-  }
+.right-header input[type="text"] {
+  padding: 5px 10px; /* Add space inside the text input (5px top/bottom, 10px left/right) */
+  font-size: 1rem; /* Set the font size for the text input to 1rem (normal size) */
+}
 
-  nav {
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 15px 0;
-    font-weight: bold;
-    border-bottom: 2px solid #e5e5e5;
-  }
+nav {
+  background-color: #fff; /* Set the background color of the navigation to white */
+  display: flex; /* Use flexbox layout for the navigation */
+  justify-content: center; /* Center the navigation items horizontally */
+  gap: 40px; /* Add space between navigation items */
+  padding: 15px 0; /* Add vertical padding (15px top/bottom) */
+  font-weight: bold; /* Make the navigation text bold */
+  border-bottom: 2px solid #e5e5e5; /* Add a light gray border at the bottom of the nav */
+}
 
-  nav span {
-    cursor: default;
-    transition: color 0.3s;
-  }
+nav span {
+  cursor: default; /* Set the cursor to default for span elements */
+  transition: color 0.3s; /* Smoothly transition the color change over 0.3 seconds */
+}
 
-  nav span:hover {
-    color: #c49a6c;
-  }
+nav span:hover {
+  color: #c49a6c; /* Change the text color to a light brown on hover */
+}
 
-/* Global */
+
 body {
-    margin: 0;
-    font-family: 'Georgia', serif;
-    background-color: #fdf6ee; /* Cream background */
-    color: #222;
-  }
-  
-  /* Header */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #fdf6ee; /* Cream background */
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .site-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #a17452; /* Light brown */
-  }
-  
-  .right-header {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .right-header input[type="text"],
-  .right-header button {
-    padding: 8px 15px;
-    border-radius: 25px;
-    border: none;
-    background-color: #c5a675; /* Golden light brown */
-    color: white;
-    font-weight: 600;
-    font-family: 'Georgia', serif;
-    cursor: pointer;
-  }
-  
-  .right-header input[type="text"]::placeholder {
-    color: white;
-  }
-  
-  /* Nav */
-  nav {
-    background-color: #fdf6ee;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 15px 0;
-    font-weight: bold;
-    border-bottom: 2px solid #e5e5e5;
-    color: #a17452;
-  }
-  
-  nav span:hover {
-    color: #c49a6c;
-  }
+  margin: 0; /* Remove default margin around the body */
+  font-family: 'Georgia', serif; /* Set the font to Georgia with serif style */
+  background-color: #fdf6ee; /* Cream background */
+  color: #222; /* Set the text color to a dark shade */
+}
 
-  .explore-boxes a {
-    padding: 10px 20px;
-    background-color: #ffe5ec;
-    border-radius: 15px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: 0.3s;
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-  }
-  
-  .explore-boxes a:hover {
-    background-color: #ffd3e0;
-    transform: scale(1.05);
-  }
+/* Header */
+header {
+  display: flex; /* Use flexbox layout for the header */
+  justify-content: space-between; /* Space items evenly between the edges */
+  align-items: center; /* Center items vertically within the header */
+  padding: 20px 40px; /* Add space inside the header (20px top/bottom, 40px left/right) */
+  background-color: #fdf6ee; /* Cream background for the header */
+  border-bottom: 1px solid #ccc; /* Add a light gray border at the bottom */
+}
+
+.site-title {
+  font-size: 2rem; /* Set the font size for the site title to 2rem (large) */
+  font-weight: bold; /* Make the site title bold */
+  color: #a17452; /* Light brown color for the site title */
+}
+
+.right-header {
+  display: flex; /* Use flexbox layout for the right header section */
+  align-items: center; /* Center items vertically within the right header */
+  gap: 20px; /* Add space between items in the right header */
+}
+
+.right-header input[type="text"],
+.right-header button {
+  padding: 8px 15px; /* Add space inside the input and button (8px top/bottom, 15px left/right) */
+  border-radius: 25px; /* Rounded corners for input and button */
+  border: none; /* Remove default border */
+  background-color: #c5a675; /* Golden light brown background color */
+  color: white; /* Set text color to white */
+  font-weight: 600; /* Make text bold */
+  font-family: 'Georgia', serif; /* Set font style to Georgia */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.right-header input[type="text"]::placeholder {
+  color: white; /* Set placeholder text color to white */
+}
+
+/* Nav */
+nav {
+  background-color: #fdf6ee; /* Cream background for the navigation */
+  display: flex; /* Use flexbox layout for the navigation */
+  justify-content: center; /* Center the navigation items horizontally */
+  gap: 40px; /* Add space between navigation items */
+  padding: 15px 0; /* Add vertical padding (15px top/bottom) */
+  font-weight: bold; /* Make the navigation text bold */
+  border-bottom: 2px solid #e5e5e5; /* Add a light gray border at the bottom of the nav */
+  color: #a17452; /* Light brown color for the navigation text */
+}
+
+nav span:hover {
+  color: #c49a6c; /* Change the text color to a light brown on hover */
+}
+
+.explore-boxes a {
+  padding: 10px 20px; /* Add space inside the link (10px top/bottom, 20px left/right) */
+  background-color: #ffe5ec; /* Light pink background color for the link */
+  border-radius: 15px; /* Rounded corners for the link */
+  font-size: 0.95rem; /* Set the font size to slightly smaller than normal */
+  font-weight: 500; /* Set the font weight to medium */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: 0.3s; /* Smooth transition for background color and transform changes */
+  text-decoration: none; /* Remove underline from the link */
+  color: inherit; /* Inherit text color from the parent element */
+  display: inline-block; /* Allow padding and margin to be applied */
+}
+
+.explore-boxes a:hover {
+  background-color: #ffd3e0; /* Change background color to a lighter pink on hover */
+  transform: scale(1.05); /* Slightly enlarge the link on hover */
+}
 
     /* Feature Box Layout */
-    .feature-box {
-        background-color: #fffaf8;
-        padding: 40px;
-        width: 80%;
-        max-width: 1000px;
-        margin: 50px auto;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        border-radius: 20px;
-        display: flex;
-        gap: 40px;
-        align-items: center;
-        justify-content: center;
-      }
-    
-      .feature-image {
-        font-size: 6rem;
-        font-weight: bold;
-        color: #d94f70;
-        text-shadow: 0 0 15px #ffafc3, 0 0 30px #ffcbd9;
-        flex: 0 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 30%;
-      }
-    
-      .feature-details {
-        flex: 1;
-        text-align: left;
-      }
-    
-      .feature-details .tag {
-        background-color: #ffd3e0;
-        padding: 8px 20px;
-        font-weight: bold;
-        font-size: 1rem;
-        border-radius: 25px;
-        display: inline-block;
-        margin-bottom: 10px;
-      }
-    
-      .feature-details .title {
-        font-size: 2.5rem;
-        margin: 10px 0;
-        font-weight: bold;
-        color: #d94f70;
-      }
-    
-      .feature-details .rating {
-        font-size: 1.5rem;
-        color: #e26a6a;
-        margin: 10px 0;
-      }
-    
-      .feature-details .rating small {
-        font-size: 1rem;
-        color: #888;
-      }
-    
-      .feature-details .description {
-        font-size: 1.2rem;
-        margin-bottom: 25px;
-        color: #444;
-      }
-  
-  /* Review Section Title */
-  .review-heading {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 600;
-    font-family: 'Georgia', serif;
-    margin-bottom: 40px;
-    color: #a17452;
-  }
-  
-  /* Review Row */
-  .review-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0 10%;
-    flex-wrap: wrap;
-  }
-  
-  /* Movie card styles */
-  .movie-card {
-    width: 250px;
-    padding: 20px;
-    border-radius: 15px;
-    color: white;
-    text-align: center;
-    font-family: 'Georgia', serif;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .movie-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-  }
-  
-  .card1 { background-color: #ff6f61; }     /* Red */
-  .card2 { background-color: #444444; }     /* Dark gray (light black tone) */
-  .card3 { background-color: #b2dffb; }     /* Light hospital blue */
-  
-  .movie-card h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
-  
-  .movie-card p {
-    margin: 5px 0;
-    font-size: 15px;
-  }
-  
-  /* View All */
-  .view-all {
-    background-color: #c5a675;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 30px;
-    width: fit-content;
-    margin: 40px auto;
-    font-family: 'Georgia', serif;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-    cursor: default;
-  }
-  
-  .view-all:hover {
-    background-color: #b4925e;
-  }
-  
-  /* Divider line */
-  .divider-line {
-    height: 3px;
-    width: 60px;
-    background-color: #c5a675;
-    margin: 40px auto;
-    border-radius: 2px;
-  }
-  
-  /* Closing Tagline */
-  .closing-tagline {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    color: #9e5e66;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  /* Footer */
-  .main-footer {
-    background-color: #fff0f3;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    border-top: 2px solid #ffd3e0;
-    color: #7d4e50;
-  }
-  
-  .main-footer p {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  
-  .footer-links {
-    margin-top: 10px;
-  }
-  
-  .footer-links a {
-    margin: 0 10px;
-    text-decoration: underline;
-    color: #a1735c;
-    font-size: 0.95rem;
-  }
-  
-  .footer-links a:hover {
-    color: #c26f82;
-  }
-  
+.feature-box {
+  background-color: #fffaf8; /* Light pink background for the feature box */
+  padding: 40px; /* Add padding inside the feature box */
+  width: 80%; /* Set the width to 80% of the parent container */
+  max-width: 1000px; /* Set a maximum width of 1000px */
+  margin: 50px auto; /* Center the feature box with 50px margin on top and bottom */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  border-radius: 20px; /* Rounded corners for the feature box */
+  display: flex; /* Use flexbox layout for the feature box */
+  gap: 40px; /* Add space between the feature image and details */
+  align-items: center; /* Center items vertically within the feature box */
+  justify-content: center; /* Center items horizontally within the feature box */
+}
 
-  .explore-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
+.feature-image {
+  font-size: 6rem; /* Set the font size for the feature image */
+  font-weight: bold; /* Make the feature image text bold */
+  color: #d94f70; /* Dark pink color for the feature image */
+  text-shadow: 0 0 15px #ffafc3, 0 0 30px #ffcbd9; /* Add a glowing effect to the text */
+  flex: 0 0 auto; /* Prevent the feature image from growing or shrinking */
+  display: flex; /* Use flexbox layout for the feature image */
+  align-items: center; /* Center items vertically within the feature image */
+  justify-content: center; /* Center items horizontally within the feature image */
+  width: 30%; /* Set the width of the feature image to 30% of the feature box */
+}
 
-  .explore-boxes span {
-    padding: 10px 20px;
-    background-color: #ffe5ec;
-    border-radius: 15px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    cursor: default;
-    transition: 0.3s;
-  }
+.feature-details {
+  flex: 1; /* Allow the feature details to grow and fill available space */
+  text-align: left; /* Align text to the left */
+}
 
-  .explore-boxes span:hover {
-    background-color: #ffd3e0;
-    transform: scale(1.05);
-  }
+.feature-details .tag {
+  background-color: #ffd3e0; /* Light pink background for the tag */
+  padding: 8px 20px; /* Add padding inside the tag */
+  font-weight: bold; /* Make the tag text bold */
+  font-size: 1rem; /* Set the font size for the tag */
+  border-radius: 25px; /* Rounded corners for the tag */
+  display: inline-block; /* Allow padding and margin to be applied */
+  margin-bottom: 10px; /* Add space below the tag */
+}
 
-  /* Divider line */
+.feature-details .title {
+  font-size: 2.5rem; /* Set the font size for the title */
+  margin: 10px 0; /* Add vertical margin around the title */
+  font-weight: bold; /* Make the title text bold */
+  color: #d94f70; /* Dark pink color for the title */
+}
+
+.feature-details .rating {
+  font-size: 1.5rem; /* Set the font size for the rating */
+  color: #e26a6a; /* Red color for the rating */
+  margin: 10px 0; /* Add vertical margin around the rating */
+}
+
+.feature-details .rating small {
+  font-size: 1rem; /* Set the font size for the small text in the rating */
+  color: #888; /* Gray color for the small text */
+}
+
+.feature-details .description {
+  font-size: 1.2rem; /* Set the font size for the description */
+  margin-bottom: 25px; /* Add space below the description */
+  color: #444; /* Dark gray color for the description text */
+}
+
+/* Review Section Title */
+.review-heading {
+  text-align: center; /* Center the text of the review heading */
+  font-size: 28px; /* Set the font size for the review heading */
+  font-weight: 600; /* Set the font weight to semi-bold */
+  font-family: 'Georgia', serif; /* Use Georgia font with serif style */
+  margin-bottom: 40px; /* Add space below the review heading */
+  color: #a17452; /* Light brown color for the review heading */
+}
+
+/* Review Row */
+.review-row {
+  display: flex; /* Use flexbox layout for the review row */
+  justify-content: space-between; /* Space items evenly between the edges */
+  align-items: flex-start; /* Align items to the start of the flex container */
+  padding: 0 10%; /* Add horizontal padding (10% on left and right) */
+  flex-wrap: wrap; /* Allow items to wrap onto the next line if necessary */
+}
+
+/* Movie card styles */
+.movie-card {
+  width: 250px; /* Set the width of the movie card */
+  padding: 20px; /* Add padding inside the movie card */
+  border-radius: 15px; /* Rounded corners for the movie card */
+  color: white; /* Set text color to white */
+  text-align: center; /* Center the text within the movie card */
+  font-family: 'Georgia', serif; /* Use Georgia font with serif style */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Add a subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow changes */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.movie-card:hover {
+  transform: translateY(-8px); /* Move the card up slightly on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Increase shadow size for a lifted effect on hover */
+}
+
+.card1 { background-color: #ff6f61; }     /* Red */
+.card2 { background-color: #444444; }     /* Dark gray (light black tone) */
+.card3 { background-color: #b2dffb; }     /* Light hospital blue */
+
+.movie-card h3 {
+  margin-bottom: 10px; /* Add space below the heading (h3) */
+  font-size: 18px; /* Set the font size for the heading */
+}
+
+.movie-card p {
+  margin: 5px 0; /* Add vertical margin (5px top and bottom) for paragraphs */
+  font-size: 15px; /* Set the font size for the paragraph text */
+}
+
+/* View All */
+.view-all {
+  background-color: #c5a675; /* Light brown background color for the button */
+  color: white; /* Set text color to white */
+  padding: 12px 25px; /* Add padding inside the button (12px top/bottom, 25px left/right) */
+  border-radius: 30px; /* Rounded corners for the button */
+  width: fit-content; /* Set width to fit the content of the button */
+  margin: 40px auto; /* Center the button with 40px margin on top and bottom */
+  font-family: 'Georgia', serif; /* Use Georgia font with serif style */
+  font-weight: 600; /* Set the font weight to semi-bold */
+  transition: background-color 0.3s ease; /* Smooth transition for background color changes */
+  cursor: default; /* Set cursor to default (not a pointer) */
+}
+
+.view-all:hover {
+  background-color: #b4925e; /* Change background color to a darker shade on hover */
+}
+
+/* Divider line */
 .divider-line {
-    height: 3px;
-    width: 60px;
-    background-color: #c5a675;
-    margin: 40px auto;
-    border-radius: 2px;
-  }
-  
-  /* Heading */
-  .review-heading {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 600;
-    font-family: 'Georgia', serif;
-    margin-bottom: 40px;
-  }
-  
-  /* Layout row */
-  .review-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0 10%;
-    flex-wrap: wrap;
-  }
-  
-  /* Movie card styles */
-  .movie-card {
-    width: 250px;
-    padding: 20px;
-    border-radius: 15px;
-    color: white;
-    text-align: center;
-    font-family: 'Georgia', serif;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-  }
-  
-  /* Hover effect */
-  .movie-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-  }
-  
-  /* Each card color */
-  .card1 { background-color: #ff6f61; }  /* Coral */
-  .card2 { background-color: #6a89cc; }  /* Blue-purple */
-  .card3 { background-color: #88b04b; }  /* Green */
-  
-  .movie-card h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
-  
-  .movie-card p {
-    margin: 5px 0;
-    font-size: 15px;
-  }
-  
-  /* View All Button */
-  .view-all {
-    background-color: #c5a675;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 30px;
-    width: fit-content;
-    margin: 40px auto;
-    font-family: 'Georgia', serif;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-    cursor: default;
-  }
-  
-  .view-all:hover {
-    background-color: #b4925e;
-  }
+  height: 3px; /* Set the height of the divider line */
+  width: 60px; /* Set the width of the divider line */
+  background-color: #c5a675; /* Light brown color for the divider line */
+  margin: 40px auto; /* Center the divider line with 40px margin on top and bottom */
+  border-radius: 2px; /* Rounded corners for the divider line */
+}
 
-  /* Closing Line */
+/* Closing Tagline */
 .closing-tagline {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    color: #9e5e66;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  /* Footer Styles */
-  .main-footer {
-    background-color: #fff0f3;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    border-top: 2px solid #ffd3e0;
-    color: #7d4e50;
-  }
-  
-  .main-footer p {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  
-  .footer-links {
-    margin-top: 10px;
-  }
-  
-  .footer-links a {
-    margin: 0 10px;
-    text-decoration: underline;
-    color: #a1735c;
-    font-size: 0.95rem;
-  }
-  
-  .footer-links a:hover {
-    color: #c26f82;
-  }
+  text-align: center; /* Center the text of the closing tagline */
+  font-size: 1.5rem; /* Set the font size for the closing tagline */
+  font-weight: 600; /* Set the font weight to semi-bold */
+  margin-top: 60px; /* Add space above the closing tagline */
+  margin-bottom: 20px; /* Add space below the closing tagline */
+  color: #9e5e66; /* Set the text color to a muted pinkish-brown */
+  font-family: 'Poppins', sans-serif; /* Use Poppins font with sans-serif style */
+}
 
+/* Footer main container styles */
+.main-footer {
+  background-color: #fff0f3; /* Light pastel pink background */
+  padding: 20px; /* Space inside the footer */
+  text-align: center; /* Center-align all content */
+  font-family: 'Poppins', sans-serif; /* Stylish modern font */
+  border-top: 2px solid #ffd3e0; /* Soft pink top border for separation */
+  color: #7d4e50; /* Main text color – muted brownish-pink */
+}
+
+/* Paragraph styles inside the footer */
+.main-footer p {
+  margin: 0; /* Remove default margin */
+  font-size: 1rem; /* Regular text size */
+  font-weight: bold; /* Make text bold */
+}
+
+/* Container for footer navigation links */
+.footer-links {
+  margin-top: 10px; /* Space between text and links */
+}
+
+/* Footer link styles */
+.footer-links a {
+  margin: 0 10px; /* Space between each link */
+  text-decoration: underline; /* Underline links for emphasis */
+  color: #a1735c; /* Warm brown-pink for link color */
+  font-size: 0.95rem; /* Slightly smaller font size for links */
+}
+
+/* Hover effect for footer links */
+.footer-links a:hover {
+  color: #c26f82; /* Change link color to a brighter pink on hover */
+}
+
+/* Container for explore tags/buttons */
+.explore-boxes {
+  display: flex; /* Arrange spans in a row */
+  flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+  gap: 15px; /* Space between each span */
+}
+
+/* Individual tag/button styles inside .explore-boxes */
+.explore-boxes span {
+  padding: 10px 20px; /* Inner spacing for pill look */
+  background-color: #ffe5ec; /* Light pink background */
+  border-radius: 15px; /* Rounded corners */
+  font-size: 0.95rem; /* Slightly smaller font */
+  font-weight: 500; /* Medium font weight */
+  cursor: default; /* Default cursor to show it's not clickable */
+  transition: 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for explore tags */
+.explore-boxes span:hover {
+  background-color: #ffd3e0; /* Slightly darker pink on hover */
+  transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+/* Divider line styling – small horizontal bar */
+.divider-line {
+  height: 3px; /* Thickness of the line */
+  width: 60px; /* Short line */
+  background-color: #c5a675; /* Gold-ish color */
+  margin: 40px auto; /* Centered with top/bottom spacing */
+  border-radius: 2px; /* Slightly rounded edges */
+}
+
+/* Review section heading style */
+.review-heading {
+  text-align: center; /* Center the heading */
+  font-size: 28px; /* Big text */
+  font-weight: 600; /* Semi-bold */
+  font-family: 'Georgia', serif; /* Elegant serif font */
+  margin-bottom: 40px; /* Space below the heading */
+}
+
+/* Layout for review cards or content */
+.review-row {
+  display: flex; /* Horizontal layout */
+  justify-content: space-between; /* Space out child items evenly */
+  align-items: flex-start; /* Align to top */
+  padding: 0 10%; /* Horizontal padding (left & right) */
+  flex-wrap: wrap; /* Wrap on smaller screens */
+}
+
+/* Movie card styles */
+.movie-card {
+  width: 250px; /* Fixed width for uniform card size */
+  padding: 20px; /* Inner spacing for content */
+  border-radius: 15px; /* Rounded corners for a smooth look */
+  color: white; /* Text color */
+  text-align: center; /* Center all content inside the card */
+  font-family: 'Georgia', serif; /* Classy serif font */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation on hover */
+  cursor: pointer; /* Pointer cursor to show it's clickable */
+}
+
+/* Hover effect */
+.movie-card:hover {
+  transform: translateY(-8px); /* Slight lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* Stronger shadow for hover pop */
+}
+
+/* Each card color */
+.card1 { background-color: #ff6f61; }  /* Coral */
+.card2 { background-color: #6a89cc; }  /* Blue-purple */
+.card3 { background-color: #88b04b; }  /* Green */
+
+.movie-card h3 {
+  margin-bottom: 10px; /* Space below the title */
+  font-size: 18px; /* Size for movie title */
+}
+
+.movie-card p {
+  margin: 5px 0; /* Vertical spacing for each paragraph */
+  font-size: 15px; /* Font size for movie details like genre or year */
+}
+
+/* View All Button */
+.view-all {
+  background-color: #c5a675; /* Golden brown background */
+  color: white; /* White text */
+  padding: 12px 25px; /* Button padding */
+  border-radius: 30px; /* Rounded edges */
+  width: fit-content; /* Only take up needed width */
+  margin: 40px auto; /* Centered with spacing above and below */
+  font-family: 'Georgia', serif; /* Elegant serif font */
+  font-weight: 600; /* Bold text */
+  transition: background-color 0.3s ease; /* Smooth color change on hover */
+  cursor: default; /* Cursor stays default (can change to pointer if clickable) */
+}
+
+.view-all:hover {
+  background-color: #b4925e; /* Slightly darker shade on hover */
+}
+
+/* Closing Line */
+.closing-tagline {
+  text-align: center; /* Center the text */
+  font-size: 1.5rem; /* Slightly larger text */
+  font-weight: 600; /* Bold */
+  margin-top: 60px; /* Space above */
+  margin-bottom: 20px; /* Space below */
+  color: #9e5e66; /* Soft mauve color */
+  font-family: 'Poppins', sans-serif; /* Friendly sans-serif font */
+}
+
+/* Footer Styles */
+.main-footer {
+  background-color: #fff0f3; /* Light pastel pink background */
+  padding: 20px; /* Spacing inside the footer */
+  text-align: center; /* Center-align all text */
+  font-family: 'Poppins', sans-serif; /* Soft, modern sans-serif font */
+  border-top: 2px solid #ffd3e0; /* Top border to separate footer from content */
+  color: #7d4e50; /* Muted mauve text color */
+}
+
+.main-footer p {
+  margin: 0; /* Remove default paragraph margin */
+  font-size: 1rem; /* Regular text size */
+  font-weight: bold; /* Make the text bold */
+}
+
+.footer-links {
+  margin-top: 10px; /* Space between paragraph and links */
+}
+
+.footer-links a {
+  margin: 0 10px; /* Horizontal spacing between links */
+  text-decoration: underline; /* Underlined links for clarity */
+  color: #a1735c; /* Warm brown color for links */
+  font-size: 0.95rem; /* Slightly smaller font for links */
+}
+
+.footer-links a:hover {
+  color: #c26f82; /* Soft pink shade on hover for interaction feedback */
+}
+
+/* Review container styles */
+.review {
+  background-color: #fff; /* Clean white background for review card */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 20px 20px 50px; /* Space inside the card */
+  margin: 25px auto; /* Vertical spacing and center alignment */
+  max-width: 800px; /* Limit width for readability */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Smooth, readable font */
+  position: relative; /* Allows use of absolute elements inside */
+  line-height: 1.6; /* Comfortable text spacing */
+  box-sizing: border-box; /* Include padding/border in total width/height */
+}
+
+/* Reviewer's name displayed at the top */
+.review::before {
+  content: attr(data-name); /* Get name from data attribute */
+  display: block;
+  font-weight: bold;
+  color: #2c3e50; /* Deep slate color for contrast */
+  font-size: 1.05rem;
+  margin-bottom: 5px;
+}
+
+/* Timestamp displayed at the top-right corner */
+.review::after {
+  content: attr(data-time); /* Get time from data attribute */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.85rem;
+  color: #888; /* Light gray for subtle appearance */
+}
+
+/* Button container for review actions */
+.review-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-top: 15px;
+  justify-content: flex-end; /* Align buttons to the right */
+}
+
+/* Individual buttons */
+.review-buttons button {
+  background-color: #f0f0f0; /* Light gray background */
+  border: none; /* No default border */
+  border-radius: 8px; /* Rounded edges */
+  padding: 6px 12px; /* Internal spacing */
+  font-size: 0.9rem;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.2s ease; /* Smooth color transition */
+}
+
+/* Hover effect for buttons */
+.review-buttons button:hover {
+  background-color: #e0e0e0; /* Slightly darker gray on hover */
+}
+
+
+/* Star Rating Style */
+.stars {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #f4c542; /* Bright gold for star icons */
+}
+
+/* Responsive styles for screens ≤ 600px */
+@media screen and (max-width: 600px) {
   .review {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px 20px 50px;
-    margin: 25px auto;
-    max-width: 800px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: relative;
-    line-height: 1.6;
-    box-sizing: border-box;
+    padding: 15px;
   }
-  
- 
-  .review::before {
-    content: attr(data-name);
-    display: block;
-    font-weight: bold;
-    color: #2c3e50;
-    font-size: 1.05rem;
-    margin-bottom: 8px;
-  }
-  
 
   .review::after {
-    content: attr(data-time);
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 0.85rem;
-    color: #888;
+    top: 15px;
+    right: 15px;
+    font-size: 0.75rem;
   }
-  
- 
-  .review::before {
-    content: attr(data-name);
-    display: block;
-    font-weight: bold;
-    color: #2c3e50;
-    font-size: 1.05rem;
-    margin-bottom: 5px;
-  }
-  
- 
+
   .review-buttons {
-    display: flex;
-    gap: 10px;
-    margin-top: 15px;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
   }
-  
+
   .review-buttons button {
-    background-color: #f0f0f0;
-    border: none;
-    border-radius: 8px;
-    padding: 6px 12px;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
+    width: 100px;
   }
-  
-  .review-buttons button:hover {
-    background-color: #e0e0e0;
-  }
+}
 
-  .stars {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    color: #f4c542;
-  }
-  
+/* Heading style */
+h2 {
+  color: #8B4513; /* SaddleBrown shade */
+  font-weight: bold;
+  text-align: left;
+  margin-top: 30px;
+}
 
-  @media screen and (max-width: 600px) {
-    .review {
-      padding: 15px;
-    }
-  
-    .review::after {
-      top: 15px;
-      right: 15px;
-      font-size: 0.75rem;
-    }
-  
-    .review-buttons {
-      flex-direction: column;
-      align-items: flex-end;
-    }
-  
-    .review-buttons button {
-      width: 100px;
-    }
-  }
-
-  h2 {
-    color: #8B4513; 
-    font-weight: bold;
-    text-align: left;
-    margin-top: 30px;
-  }
-
-
+/* Overview section box */
 .overview-box {
-  background-color: #fff4ec;
-  border-left: 5px solid #ffb6b9;
+  background-color: #fff4ec; /* Soft peach background */
+  border-left: 5px solid #ffb6b9; /* Highlight border */
   padding: 25px;
   max-width: 800px;
   margin: 0 auto;
@@ -573,7 +575,7 @@ body {
   border-radius: 10px;
 }
 
-
+/* Grid layout for episode links */
 .episode-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -583,13 +585,13 @@ body {
   padding: 0 20px;
 }
 
-
+/* Individual episode box style */
 .episode-box {
   display: block;
   text-align: center;
   padding: 12px;
-  background-color: #ffe0e0;
-  color: #6d4c41;
+  background-color: #ffe0e0; /* Light pink */
+  color: #6d4c41; /* Chocolate brown text */
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
@@ -597,49 +599,55 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
+/* Hover effect for episode box */
 .episode-box:hover {
   background-color: #ffbdbd;
   transform: scale(1.05);
 }
 
+/* General call-to-action button */
 .button {
-    display: inline-block;
-    background: linear-gradient(135deg, #ff6b81, #81c784);
-    color: white;
-    padding: 10px 30px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px; 
-    transition: background 0.3s ease;
-    min-width: 220px;
-    text-align: center;
+  display: inline-block;
+  background: linear-gradient(135deg, #ff6b81, #81c784); /* Pink to mint gradient */
+  color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  min-width: 220px;
+  text-align: center;
 }
 
+/* Hover gradient effect for button */
 .button:hover {
-    background: linear-gradient(135deg, #e74c3c, #66bb6a);
+  background: linear-gradient(135deg, #e74c3c, #66bb6a); /* Darker contrast */
 }
 
+/* Drama information box */
 .drama-info-box {
-    background: #fff8f0; 
-    border: 2px solid #f5b7b1; 
-    border-radius: 15px;
-    padding: 25px;
-    margin: 30px auto;
-    max-width: 600px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #333;
+  background: #fff8f0; /* Light creamy background */
+  border: 2px solid #f5b7b1; /* Subtle pink border */
+  border-radius: 15px;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
 }
 
+/* Remove default list styling */
 .drama-info-box ul {
-    list-style-type: none; 
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
+/* Spacing between drama info list items */
 .drama-info-box li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-  
+
