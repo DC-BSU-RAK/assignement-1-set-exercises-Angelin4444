@@ -27,6 +27,7 @@ function updateLives() {
   document.getElementById("lives").innerHTML = "❤️".repeat(lives); // Display correct number of hearts
 }
 
+
 // === Function to generate one round of the game ===
 function generateRound() {
   const rgbDisplay = document.getElementById("rgbDisplay"); // Text displaying RGB code to guess

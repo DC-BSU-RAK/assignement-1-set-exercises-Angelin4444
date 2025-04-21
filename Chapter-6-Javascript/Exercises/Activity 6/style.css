@@ -1,133 +1,153 @@
-/* Gradient animated background */
+/* -------------------- Overall Page Styling -------------------- */
+
+/* Apply animated gradient background and center content */
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(-45deg, #8e44ad, #e91e63, #3498db, #9b59b6);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background 0.5s;
-  }
-  
-  @keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(-45deg, #8e44ad, #e91e63, #3498db, #9b59b6); /* Gradient colors */
+  background-size: 400% 400%; /* Makes gradient move more smoothly */
+  animation: gradient 15s ease infinite; /* Infinite animation */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s; /* Smooth background transition */
+}
 
-  .top-left-heading {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-  
-  .top-left-heading h2 {
-    margin: 0;
-    color: #ffffff;
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  
-  /* Dark Theme toggle button */
-  .theme-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  
-  #toggleTheme {
-    padding: 8px 12px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  
-  /* Container */
-  .container {
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(8px);
-    text-align: center;
-    color: #ffffff;
-    width: 90%;
-    max-width: 350px;
-  }
-  
-  /* Title */
-  h1 {
-    margin-bottom: 20px;
-    font-size: 1.8em;
-  }
-  
-  /* Label */
-  label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
-  }
-  
-  /* Input */
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 8px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1em;
-    background: rgba(255, 255, 255, 0.8);
-  }
-  
-  input:focus {
-    box-shadow: 0 0 5px #ffffff;
-    background: #fff;
-  }
-  
-  /* Button */
-  button {
-    margin-top: 20px;
-    padding: 12px 20px;
-    background-color: #ffffff;
-    color: #8e44ad;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 1em;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  button:hover {
-    background-color: #e91e63;
-    color: white;
-  }
-  
-  /* Result */
-  #result {
-    margin-top: 20px;
-    font-size: 1.2em;
-    transition: transform 0.4s ease, color 0.4s ease;
-  }
+/* Gradient animation keyframes */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-  footer {
-    position: absolute;
-    bottom: 15px;
-    width: 100%;
-    text-align: center;
-    font-size: 0.9em;
-    color: #ffffff;
-    opacity: 0.8;
-  }
-  
-  /* Animation class */
-  #result.animated {
-    transform: scale(1.1);
-    color: #ffd700;
-  }
-  
+/* -------------------- Header Title (Top Left) -------------------- */
+
+/* Position heading at top left corner */
+.top-left-heading {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.top-left-heading h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* -------------------- Theme Toggle Button (Top Right) -------------------- */
+
+/* Position the theme toggle button at top right */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Styling for the dark/light toggle button */
+#toggleTheme {
+  padding: 8px 12px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* -------------------- Main Calculator Container -------------------- */
+
+/* Glassmorphism-style container box */
+.container {
+  background: rgba(255, 255, 255, 0.15); /* Transparent white */
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37); /* Soft box shadow */
+  backdrop-filter: blur(8px); /* Blurry glass effect */
+  text-align: center;
+  color: #ffffff;
+  width: 90%;
+  max-width: 350px;
+}
+
+/* -------------------- Title Styling -------------------- */
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+/* -------------------- Label Styling -------------------- */
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* -------------------- Input Field Styling -------------------- */
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent input background */
+}
+
+/* Highlight input on focus */
+input:focus {
+  box-shadow: 0 0 5px #ffffff;
+  background: #fff;
+}
+
+/* -------------------- Button Styling -------------------- */
+
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  color: #8e44ad; /* Button text color */
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s; /* Smooth hover transition */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #e91e63; /* Pink background on hover */
+  color: white; /* White text */
+}
+
+/* -------------------- Result Display Styling -------------------- */
+
+#result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  transition: transform 0.4s ease, color 0.4s ease; /* Smooth animation when result changes */
+}
+
+/* -------------------- Footer Styling -------------------- */
+
+footer {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+/* -------------------- Result Animation Class -------------------- */
+
+/* Animation effect for result on calculation */
+#result.animated {
+  transform: scale(1.1); /* Slightly enlarges result */
+  color: #ffd700; /* Changes text to gold */
+}
