@@ -1,37 +1,40 @@
-/* Import Dancing Script font */
+/* Import Dancing Script font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
+/* Resetting default styles and applying box-sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body styling with background, font and padding */
 body {
   font-family: 'Dancing Script', cursive;
-  background-color: #edd9de;
-  color: #9d71c9;
+  background-color: #edd9de; /* Soft pastel background */
+  color: #9d71c9; /* Main text color */
   padding: 20px;
 }
 
-/* Header Styling */
+/* ------------------ Header Section ------------------ */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #d3bbe6;
+  background-color: #d3bbe6; /* Soft purple background */
   padding: 20px;
   border-radius: 15px;
   margin-bottom: 20px;
 }
 
+/* Website Logo styling */
 .logo {
   font-size: 2.5rem;
   font-weight: bold;
   color: #c87dd6;
 }
 
-/* Navigation Bar */
+/* ------------------ Navigation Bar ------------------ */
 nav {
   background-color: #dda8da;
   display: flex;
@@ -42,6 +45,7 @@ nav {
   margin-bottom: 25px;
 }
 
+/* Nav links style */
 nav a {
   text-decoration: none;
   color: #9d71c9;
@@ -49,17 +53,19 @@ nav a {
   transition: color 0.3s ease;
 }
 
+/* Nav link hover effect */
 nav a:hover {
   color: #6b49aa;
 }
 
-/* Search Bar */
+/* ------------------ Search Bar ------------------ */
 .search-bar {
   display: flex;
   justify-content: center;
   margin: 25px 0;
 }
 
+/* Search input styling */
 .search-bar input[type="text"] {
   padding: 10px 15px;
   border-radius: 25px;
@@ -71,6 +77,7 @@ nav a:hover {
   color: #9d71c9;
 }
 
+/* Search button styling */
 .search-bar button {
   margin-left: 10px;
   padding: 10px 20px;
@@ -83,11 +90,12 @@ nav a:hover {
   transition: background-color 0.3s ease;
 }
 
+/* Search button hover effect */
 .search-bar button:hover {
   background-color: #6b49aa;
 }
 
-/* Image Gallery */
+/* ------------------ Image Gallery ------------------ */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -95,6 +103,7 @@ nav a:hover {
   margin-bottom: 40px;
 }
 
+/* Individual image card */
 .image-card {
   background-color: #fbefff;
   padding: 15px;
@@ -104,17 +113,19 @@ nav a:hover {
   transition: transform 0.3s ease;
 }
 
+/* Hover effect for image card */
 .image-card:hover {
   transform: translateY(-5px);
 }
 
+/* Styling images inside cards */
 .image-card img {
   width: 100%;
   height: auto;
   border-radius: 15px;
 }
 
-/* Image Filters */
+/* Apply different filters to each image */
 .image-card:nth-child(1) img {
   filter: grayscale(100%);
 }
@@ -127,7 +138,7 @@ nav a:hover {
   filter: brightness(1.1);
 }
 
-/* Photo credit text */
+/* Photo credit text under each image */
 .image-card p {
   margin-top: 12px;
   font-size: 1.2rem;
@@ -135,7 +146,7 @@ nav a:hover {
   font-weight: 500;
 }
 
-/* Explore Box */
+/* ------------------ Explore Box ------------------ */
 .explore-box {
   background-color: #dda8da;
   padding: 25px;
@@ -150,6 +161,7 @@ nav a:hover {
   transition: all 0.3s ease;
 }
 
+/* Hover effect for explore box */
 .explore-box:hover {
   transform: scale(1.05);
   box-shadow: 0 0 30px #c78ae2;
@@ -157,7 +169,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-/* Quote Section */
+/* ------------------ Quote Section ------------------ */
 .quote {
   font-size: 1.5rem;
   text-align: center;
@@ -167,7 +179,7 @@ nav a:hover {
   font-style: italic;
 }
 
-/* Footer */
+/* ------------------ Footer ------------------ */
 footer {
   text-align: center;
   margin-top: 60px;

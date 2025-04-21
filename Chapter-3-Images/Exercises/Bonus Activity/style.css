@@ -1,54 +1,54 @@
-/* General box style */
+/* General box style for all <div> elements */
 div {
-    display: inline-block;
-    font-family: sans-serif;
-    font-size: 20px;
-    margin: 25px;
-    line-height: 100px;
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    background-color: white;
-  }
-  
-  /* Creamy background for whole page */
-  body {
-    margin: 100px auto;
-    width: max-content;
-    background-color: #fff9f0; /* soft cream/off-white */
-    padding: 50px;
-  }
+  display: inline-block;         /* Allows boxes to sit next to each other */
+  font-family: sans-serif;       /* Sets a clean, modern font */
+  font-size: 20px;               /* Text size */
+  margin: 25px;                  /* Space around each box */
+  line-height: 100px;            /* Vertically centers text */
+  text-align: center;            /* Horizontally centers text */
+  width: 200px;                  /* Width of each box */
+  height: 200px;                 /* Height of each box */
+  background-color: white;       /* Background color of the boxes */
+}
 
-  h1 {
-    text-align: center;
-    color: purple;
-  }
+/* Body styling to center everything with a creamy background */
+body {
+  margin: 100px auto;            /* Vertical margin + centers horizontally */
+  width: max-content;            /* Only as wide as needed to fit children */
+  background-color: #fff9f0;     /* Soft cream/off-white background */
+  padding: 50px;                 /* Space inside the body */
+}
 
-  /* Box A */
+/* Styling for the main heading */
+h1 {
+  text-align: center;            /* Centers the heading text */
+  color: purple;                 /* Purple colored text */
+}
+
+/* Box A styling */
 .diva {
-  border: 4px solid purple;
-  box-shadow: 10px 10px 15px red; /* Outer shadow bottom-right */
+  border: 4px solid purple;              /* Purple solid border */
+  box-shadow: 10px 10px 15px red;        /* Outer shadow on bottom-right in red */
 }
 
-/* Box B */
+/* Box B styling */
 .divb {
-  border: 4px solid green;
-  box-shadow: inset 5px 5px 10px black; /* Inner shadow bottom-left */
+  border: 4px solid green;               /* Green solid border */
+  box-shadow: inset 5px 5px 10px black;  /* Inner shadow on bottom-left in black */
 }
 
-/* Box C */
+/* Box C styling */
 .divc {
-  border: 10px solid orange;
-  border-radius: 15px;
-  box-shadow: 
-  0 0 0 10px blue,
-  0 0 0 20px red,
-  0 0 0 30px green;
+  border: 10px solid orange;             /* Thick orange border */
+  border-radius: 15px;                   /* Rounded corners */
+  box-shadow:                            /* Multiple colorful outer rings */
+    0 0 0 10px blue,                     /* Blue ring */
+    0 0 0 20px red,                      /* Red ring outside blue */
+    0 0 0 30px green;                    /* Green ring outside red */
 }
 
-/* Box D */
+/* Box D styling */
 .divd {
-  border: 4px solid rgb(130, 16, 16);
-  text-shadow: 4px 4px 0px black;
+  border: 4px solid rgb(130, 16, 16);    /* Dark red solid border */
+  text-shadow: 4px 4px 0px black;        /* Bold shadow behind the text */
 }
-  
